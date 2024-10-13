@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: back-end
+  labels:
+    category: web
+spec:
+  containers:
+    - name: back-end
+      image: harishhacks/vote-db:v1
+  
