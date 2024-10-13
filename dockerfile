@@ -1,0 +1,6 @@
+FROM mysql:latest
+ENV MYSQL_ROOT_PASSWORD=toor
+ENV MYSQL_DATABASE=voting_db
+
+# Expose MySQL port
+EXPOSE 3306
