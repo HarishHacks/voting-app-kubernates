@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: voting-app-deployment
+  labels:
+    category: voting-app-deployment
+spec:
+  selector:
+    matchLabels:
+      category: front-end
+  template:
+    metadata:
+      name: voting-app
+      labels:
+        category: front-end
+    spec:
+      containers:
+      - name: voting-app
+        image: harishhacks/vote-app:v1
+        ports:
+        - containerPort: 5000
