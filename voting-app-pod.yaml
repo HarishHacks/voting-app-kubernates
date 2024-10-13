@@ -5,6 +5,7 @@ metadata:
   labels:
     category: voting-app-deployment
 spec:
+  replica: 5
   selector:
     matchLabels:
       category: front-end
