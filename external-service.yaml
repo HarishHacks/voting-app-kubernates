@@ -5,7 +5,7 @@ metadata:
   labels:
     category: db-connector-services
 spec:
-  type: NodePort
+  type: LoadBalancer
   ports:
     - port: 5000
       targetPort: 5000
